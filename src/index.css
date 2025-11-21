@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+  
+  :root {
+    --background: 220 20% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 92 44% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 127 43% 41%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 92 44% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 92 44% 50%;
+
+    --radius: 0.75rem;
+    
+    --dark-base: 108 35% 34%;
+    --glow-primary: 92 44% 50%;
+    --primary-glow: 92 44% 60%;
+    --tech-gradient-start: 220 20% 8%;
+    --tech-gradient-end: 220 18% 12%;
+    
+    /* Enhanced gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(92 44% 50%), hsl(127 43% 41%));
+    --gradient-radial: radial-gradient(circle at center, hsl(92 44% 50% / 0.1), transparent 70%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(92 44% 50% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(127 43% 41% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(108 35% 34% / 0.15) 0px, transparent 50%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(92 44% 50% / 0.3);
+    --shadow-card: 0 10px 40px hsl(220 20% 5% / 0.5);
+    --shadow-elevated: 0 20px 60px hsl(220 20% 5% / 0.7);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Michroma', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 30px hsl(var(--glow-primary) / 0.6),
+                 0 0 60px hsl(var(--glow-primary) / 0.3);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.4),
+                0 0 40px hsl(var(--glow-primary) / 0.2);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+  
+  .gradient-mesh {
+    background: 
+      radial-gradient(at 40% 20%, hsl(var(--primary) / 0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsl(var(--secondary) / 0.15) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsl(var(--dark-base) / 0.15) 0px, transparent 50%);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .card-elevated {
+    box-shadow: 0 10px 40px hsl(220 20% 5% / 0.5);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 20px 60px hsl(220 20% 5% / 0.7),
+                0 0 30px hsl(var(--glow-primary) / 0.3);
+    transform: translateY(-5px);
+  }
+}
