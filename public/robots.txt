@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://a3techworld.com/sitemap.xml
+
+# Block common non-content paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow important content paths
+Allow: /$
+Allow: /features
+Allow: /pricing
+Allow: /about
+Allow: /contact
+Allow: /templates
+
+# Crawl delay (optional - be careful with this)
+Crawl-delay: 1
