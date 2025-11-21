@@ -1,73 +1,221 @@
-# Welcome to your Lovable project
+# A3TechWorld.com – AI Website Builder Platform
 
-## Project info
+A complete production-ready multi-page React.js application showcasing a futuristic AI-powered website builder platform.  
+The project demonstrates modern UI/UX, advanced animations, responsive design, reusable components, and a unified green-tech visual identity.
 
-**URL**: https://lovable.dev/projects/247e7274-cbe0-46fc-9dab-28f32463b71b
+---
 
-## How can I edit this code?
+## 🚀 Features Overview
 
-There are several ways of editing your application.
+### ✔ Multi-page app with React Router  
+### ✔ Floating header + blur on scroll  
+### ✔ Fully responsive (Mobile / Tablet / Desktop)  
+### ✔ Framer Motion animations  
+### ✔ Typewriter hero text  
+### ✔ GSAP infinite logo marquee  
+### ✔ Lottie feature icons  
+### ✔ Animated counters  
+### ✔ Template filtering system  
+### ✔ Pricing toggle with transitions  
+### ✔ Reusable card components  
+### ✔ Clean, maintainable architecture  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/247e7274-cbe0-46fc-9dab-28f32463b71b) and start prompting.
+## 🛠 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React.js**
+- **React Router**
+- **Tailwind CSS**
+- **Framer Motion**
+- **GSAP**
+- **Lottie**
+- **react-simple-typewriter**
+- Vite (or CRA based on setup)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Color Palette
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Role       | Hex       |
+|------------|-----------|
+| Primary    | `#73B646` |
+| Secondary  | `#3B9445` |
+| Dark Base  | `#417638` |
+| Text       | `#FFFFFF` |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+##🌐 Full Pages Breakdown
+1. 🏠 Homepage (7 Sections)
+• Hero Section
 
-# Step 3: Install the necessary dependencies.
-npm i
+Headline: “Describe your business.”
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Typewriter rotating lines:
 
-**Edit a file directly in GitHub**
+Watch AI build your website instantly.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Turn your ideas into a live, responsive site.
 
-**Use GitHub Codespaces**
+From concept to code in seconds.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Buttons: Create Website, Try Demo
 
-## What technologies are used for this project?
+Animated floating orbs
 
-This project is built with:
+Fade + rise entrance effect
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+• Features Section
 
-## How can I deploy this project?
+6 feature cards
 
-Simply open [Lovable](https://lovable.dev/projects/247e7274-cbe0-46fc-9dab-28f32463b71b) and click on Share -> Publish.
+Lottie icons
 
-## Can I connect a custom domain to my Lovable project?
+Stagger animations
+Features include:
+AI Builder, Smart Templates, SEO Optimizer, Drag-Drop Builder, Analytics, One-Click Publish
 
-Yes, you can!
+• Templates Section
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+6 preview cards
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Hover lift + glow
+
+CTA: View All Templates
+
+• Pricing Preview Section
+
+3 pricing cards: Starter, Pro, Enterprise
+
+Pro highlighted with glow
+
+• Testimonials
+
+Fade-in cards
+
+Subtle zoom
+
+• Partners
+
+GSAP infinite marquee animation
+
+• Final CTA
+
+“Start your AI-powered website journey today”
+
+Button → Get Started Free
+
+## 2. ⚙ Features Page
+
+Hero: Smarter. Faster. AI-Driven Web Creation.
+
+Detailed feature breakdown
+
+Scroll-reveal animations
+
+Interactive mockups
+
+## 3. 🧩 Templates Page
+
+Hero: Choose from Modern, Responsive Templates
+
+Filters:
+
+Business | Startup | Portfolio | SaaS
+
+Hover glow + lift
+
+CTA: Use This Template
+
+## 4. 💰 Pricing Page
+
+Hero: Flexible Plans for Every Creator
+
+Monthly/Yearly toggle
+
+Framer Motion transitions
+
+Pro plan highlighted
+
+CTA: Start Free Trial
+
+## 5. 🏢 About Page
+
+Hero: We Build AI That Builds Websites
+
+Mission and Vision
+
+Animated counters:
+
+Active users
+
+Websites built
+
+AI models
+
+Team grid animations
+
+CTA: Join Our Journey
+
+## 6. 📩 Contact Page
+
+Hero: Let's Talk About Your Next Project
+
+Form fields:
+
+Name, Email, Message
+
+Google Map embed
+
+CTA: Talk to our experts
+
+Full-page stagger animations
+
+🎞 Animation System
+✔ Framer Motion
+
+Page transitions
+
+Fade-up reveals
+
+Hover effects
+
+Hero animation
+
+✔ GSAP
+
+Infinite partner marquee
+
+✔ Lottie
+
+Icons and feature animations
+
+✔ Typewriter
+
+react-simple-typewriter in hero subtitle
+
+✔ Animated Counters
+
+Framer Motion number incrementation
+
+📱 Responsive Design Rules
+
+Mobile: stacked layout
+
+Tablet: 2-column layout
+
+Desktop: full-width grid
+
+Floating header hides on scroll (mobile)
+
+##🧼 Code Quality
+
+Reusable components
+
+Organized folder structure
+
+Shared global styles
+
+Production-ready codebase
